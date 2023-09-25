@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">W-Calculator</string>
+    <string name="error_exceed_max_digits">Max digits is %s</string>
+    <string name="value_copied_to_clipboard_show">Value copied to clipboard:\n%s</string>
+    <string name="division_by_0">Can\'t divide by 0</string>
+    <string name="syntax_error">Syntax error</string>
+    <string name="can_not_do_action_because_error">Can not do action because of error</string>
+    <string name="infinity">Infinity</string>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_margin">3dp</dimen>
+    <dimen name="btn_margin_vertical_for_portrait">6dp</dimen>
+    <dimen name="button_text_size">80sp</dimen>
+    <dimen name="button_text_min_size">14sp</dimen>
+    <dimen name="btn_radius">16dp</dimen>
+    <dimen name="center_button_margin">10dp</dimen>
+    <dimen name="result_text_max_size">100sp</dimen>
+    <dimen name="result_text_min_size">12sp</dimen>
+    <dimen name="formula_text_max_size">65sp</dimen>
+    <dimen name="formula_text_min_size">8sp</dimen>
+</resources>

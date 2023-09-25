@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">@color/white</color>
+    <color name="number">@color/black</color>
+
+    <color name="calculation_error_color">#F44B3F</color>
+    <color name="black">#000000</color>
+    <color name="btn_black">#4b4b4b</color>
+    <color name="white">#FFFFFF</color>
+    <color name="orange">#ffb62c</color>
+    <color name="gray">#D0D0D0</color>
+    <color name="green">#2ca465</color>
+</resources>

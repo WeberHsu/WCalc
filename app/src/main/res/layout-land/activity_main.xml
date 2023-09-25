@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.11" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.22" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.44" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.56" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineForButtonRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineForButtonRight2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.63" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.67" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline78"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.78" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline89"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.89" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHori35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.35" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHori48"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.48" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHori64"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.60" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineHori88"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.87" />
+
+    <!-- Calculator Left -->
+    <include
+        android:id="@+id/calculator"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        layout="@layout/view_calculator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline44"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <!-- Calculator Left END -->
+
+    <ImageButton
+        android:id="@+id/btnToLeft"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/arrow_left"
+        android:background="@drawable/btn_green"
+        android:padding="2dp"
+        android:layout_marginTop="@dimen/btn_margin"
+        android:layout_marginBottom="@dimen/btn_margin"
+        android:layout_marginStart="@dimen/center_button_margin"
+        android:layout_marginEnd="@dimen/center_button_margin"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineHori35"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineHori48"
+        app:layout_constraintStart_toEndOf="@+id/guideline44"
+        app:layout_constraintEnd_toStartOf="@+id/guideline56"/>
+
+    <ImageButton
+        android:id="@+id/btnToRight"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/arrow_right"
+        android:padding="2dp"
+        android:background="@drawable/btn_green"
+        android:layout_marginTop="@dimen/btn_margin"
+        android:layout_marginBottom="@dimen/btn_margin"
+        android:layout_marginStart="@dimen/center_button_margin"
+        android:layout_marginEnd="@dimen/center_button_margin"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineForButtonRight"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineForButtonRight2"
+        app:layout_constraintStart_toEndOf="@+id/guideline44"
+        app:layout_constraintEnd_toStartOf="@+id/guideline56"/>
+
+    <TextView
+        android:id="@+id/btnDelete"
+        android:text="DEL"
+        style="@style/BaseButton"
+        android:padding="5dp"
+        android:layout_marginStart="@dimen/center_button_margin"
+        android:layout_marginEnd="@dimen/center_button_margin"
+        android:layout_marginTop="@dimen/btn_margin"
+        android:background="@drawable/btn_gray"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineHori88"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guideline44"
+        app:layout_constraintEnd_toStartOf="@+id/guideline56"/>
+
+    <!-- Calculator Right -->
+    <include
+        android:id="@+id/calculatorRight"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        layout="@layout/view_calculator"
+        app:layout_constraintStart_toEndOf="@+id/guideline56"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <!-- Calculator Right END -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
