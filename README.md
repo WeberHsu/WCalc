@@ -1,4 +1,4 @@
-# Calculator
+# WCalc
 This simple clean calculator offers great user experience that you will love seeing. It supports dark and light mode background and you can copy the result or formula to clipboard by long pressing it.
 
 The app is a simple helper for fast calculations with many basic functions including multiplying, dividing and percent. Every time clicking button, you can have vibration effect on button presses to make you confident. 
