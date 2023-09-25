@@ -52,6 +52,7 @@ class CalculatorImpl(
         resetErrorTypes()
         currentResult = ""
         currentInput = ""
+        errorStatusOld = false
         isEqualLastAction = false
         calculationResult = BigDecimal.ZERO
     }
