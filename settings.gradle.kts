@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Wcalculator"
+rootProject.name = "Wcalc"
 include(":app")
  
