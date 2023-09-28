@@ -21,9 +21,8 @@ import java.text.*
 import java.util.*
 import kotlin.math.*
 
-class MainActivity : BaseActivity() {
+class MainActivity : BaseActivity<ActivityMainBinding>() {
 
-    private lateinit var binding: ActivityMainBinding
     private lateinit var calc: CalculatorImpl // Left calculator
     private lateinit var calcRight: CalculatorImpl // Right calculator
     private var saveCalculatorState: String = ""
@@ -31,11 +30,10 @@ class MainActivity : BaseActivity() {
     private var isCurrentCalculatorLeft: Boolean = true // Check for portrait mode because of two calculators
     private var isRestore = false
 
+    override fun createBinding(layoutInflater: LayoutInflater): ActivityMainBinding = ActivityMainBinding.inflate(layoutInflater)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        ImmersionBar.with(this).init()
 
         if (savedInstanceState != null) {
             isRestore = true
