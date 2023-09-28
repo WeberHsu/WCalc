@@ -159,7 +159,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
             override fun sendAccessibilityEvent(host: View, eventType: Int) {
                 super.sendAccessibilityEvent(host, eventType)
                 if (eventType == AccessibilityEvent.TYPE_VIEW_TEXT_SELECTION_CHANGED) {
-                    calculator.isEqualLastAction = false
+//                    calculator.isEqualLastAction = false
                 }
                 if (view?.input?.isCursorVisible == false) {
                     view.input.isCursorVisible = true
